@@ -4,12 +4,12 @@ const grnRate = 0.040;
 const lariRate = 0.017;
 const plnRate = 1.37;
 
-let furtherExchange;
+    let furtherExchange;
 
-do {
-    let userCurrencyFrom = prompt(
-    "Enter the name of the currency to exchange from: USD, EUR, UAH, GEL, PLN"
-    );
+    do {
+        let userCurrencyFrom = prompt(
+           "Enter the name of the currency to exchange from: USD, EUR, UAH, GEL, PLN"
+        );
 
     let curencyIndex;
         if (userCurrencyFrom.toUpperCase() === "USD") {
@@ -35,6 +35,7 @@ do {
         );
 
         console.log(currencyAmount);
+        
         console.log(userCurencyFor);
 
     let exchangedAmount;
@@ -54,8 +55,8 @@ do {
         }
             console.log(exchangedAmount);
 
-        alert(
-            `Your amount ${exchangedAmount.toFixed(2)} ${userCurencyFor.toUpperCase()}`
+        alert(`Your amount ${exchangedAmount.toFixed(2)}
+            ${userCurencyFor.toUpperCase()}`
         );
 
         furtherExchange = confirm("Continue?");
