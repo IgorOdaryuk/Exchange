@@ -55,9 +55,7 @@ const plnRate = 1.37;
         }
             console.log(exchangedAmount);
 
-        alert(`Your amount ${exchangedAmount.toFixed(2)}
-            ${userCurencyFor.toUpperCase()}`
-        );
+        alert(`Your amount ${exchangedAmount.toFixed(2)} ${userCurencyFor.toUpperCase()}`);
 
         furtherExchange = confirm("Continue?");
         } while (furtherExchange === true);
